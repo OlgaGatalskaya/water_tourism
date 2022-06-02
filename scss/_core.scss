@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;   
+    background-color: $background-color;
+}
+
+.container {
+    @include min-max(320px, 100%, 0);
+    
+}
+
+.wrap {
+    @include min-max(320px, 940px, 20px);
+}
+

@@ -1,0 +1,19 @@
+.squares {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    .square {
+        background-color: $yellow;
+        margin: 0 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+
+        a {
+            color: #262c3a;
+            text-decoration: none;
+        }
+        
+        
+    }
+}

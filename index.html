@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tourism</title>
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+</head>
+
+<body>
+   <div class="container">
+       <header class="header">
+           <div class="wrap">
+                <p class='header__title'>OpenWater</p>
+           </div> 
+       </header>
+       <main class="wrap">
+           <div class="form__wrapper">
+                <form class="form">
+                    <div class="form__content">
+                        <p class="form__title">Подбор заплыва:</p>
+
+                        <div class="country__content">
+                            <p class="title__select">Страна</p> 
+                            <select id="country" class="select__style">
+                                <option disabled selected>Country</option>
+	                            <option value="AT">Австрия</option>
+	                            <option value="SP">Испания</option>
+	                            <option value="RUS">Россия</option>
+	                            <option value="BY">Беларусь</option>
+                            </select>
+                        </div>
+
+                        <div class="city__content">
+                            <p class="title__select">Город</p> 
+                            <select id="city" class="select__style">
+                                <option disabled selected>City</option>
+                                <option value="MS">Минск</option>
+	                            <option value="MK">Москва</option>
+	                            <option value="MD">Мадрид</option>
+	                            <option value="PR">Париж</option>
+	                            <option value="BR">Варшава</option>
+                            </select>
+                        </div>
+
+                        <div class="date__input"> 
+                                <p class="dates__title">Период</p> 
+                                <div class="dates">
+                                    <label class="start" for="start"> c  </label> <input type="text" id="datepicker" class="select__style" >
+                                    <label class="end" for="end"> по  </label>  <input type="text" id="datepicker2" class="select__style">
+                                </div>       
+                        </div>
+                    
+                        <div class="series__content">
+                            <p class="title__select">Серия</p>  
+                            <select id="series" class="select__style">
+                                <option disabled selected>Serie</option>
+                                <option value="OC">Ocean</option>
+	                            <option value="XW">X-Waters</option>
+                            </select>
+                        </div>
+
+                        <div class="polzunok-container-5">
+                            <p class="title__select">Дистанция</p> <br> 
+                            <div class="polzunok-imputs">
+                                <input type="text" class="polzunok-input-5-left" />
+                                <input type="text" class="polzunok-input-5-right "/>
+                                <div class="polzunok-5"></div>
+                            </div> 
+                        </div>    
+                    </div>
+                    
+                    <div class="form__button">
+                        <input class="btn" type="submit" value="Подобрать">
+                    </div>
+                </form>
+           </div>
+           
+           <div class="blocks">
+               <div class="element">
+                   <div class="image__element">
+                       <img src="img/img.jpg" alt="photo">
+                    </div>
+                    <div class="element__discription">
+                        <div class="discription__title">
+                            <h2>Oceanman lago D´orta 2021</h2>
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <p class="discription__text">Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>
+                        <div class="hide discription__text animation" id="text1">
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>    
+                        </div>
+                        <div class="discription__footer">
+                            <div class="country">
+                                <div>
+                                    <img src="img/flag.png" alt="flag">
+                                </div>
+                                <p>Греция</p>
+                            </div>
+                            <div class="date">
+                                <img src="img/calendar.png" alt="calendar">
+                                <p>18.06.2021 - 20.06.2021</p>
+                            </div>
+                            <a class="country__link" href="#" id="link1">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="distance">
+                        <h3>Дистанция</h3>
+                        <p>1 000 м</p>
+                        <p>3 000 м</p>
+                        <p>5 000 м</p>
+                        <p>10 000 м</p>
+                    </div>
+
+                    <div class="details">
+                        <h3>Подробно</h3>
+                        <p><a class="details__link" href="#">Сайт гонки</a></p>
+                        <p><a class="details__link" href="#">Регистрация</a></p>   
+                    </div>
+               </div>
+
+               <div class="element">
+                    <div class="image__element">
+                        <img src="img/img.jpg" alt="photo">
+                    </div>
+
+                    <div class="element__discription">
+                        <div class="discription__title">
+                            <h2>Oceanman lago D´orta 2021</h2>
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <p class="discription__text">Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>
+                        <div class="hide discription__text animation" id="text2">
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>    
+                        </div>
+                        <div class="discription__footer">
+                            <div class="country">
+                                <div>
+                                    <img src="img/flag.png" alt="flag">
+                                </div>
+                                <p>Греция</p>
+                            </div>
+                            <div class="date">
+                                <img src="img/calendar.png" alt="calendar">
+                                <p>18.06.2021 - 20.06.2021</p>
+                            </div>
+                            <a class="country__link" id="link2" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                <div class="distance">
+                    <h3>Дистанция</h3>
+                    <p>1 000 м</p>
+                    <p>3 000 м</p>
+                    <p>5 000 м</p>
+                    <p>10 000 м</p>
+                </div>
+
+                <div class="details">
+                    <h3>Подробно</h3>
+
+                    <p><a class="details__link" href="#">Сайт гонки</a></p>
+                    <p><a class="details__link" href="#">Регистрация</a></p>
+                    
+                </div>
+
+               </div>
+
+               <div class="element">
+                    <div class="image__element">
+                        <img src="img/img.jpg" alt="photo">
+                    </div>
+
+                    <div class="element__discription">
+                        <div class="discription__title">
+                            <h2>Oceanman lago D´orta 2021</h2>
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <p class="discription__text">Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>
+                        <div class="hide discription__text animation" id="text3">
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>    
+                        </div>
+                        <div class="discription__footer">
+                            <div class="country">
+                                <div>
+                                    <img src="img/flag.png" alt="flag">
+                                </div>
+                                <p>Греция</p>
+                            </div>
+                            <div class="date">
+                                <img src="img/calendar.png" alt="calendar">
+                                <p>18.06.2021 - 20.06.2021</p>
+                            </div>
+                            <a class="country__link" id="link3" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="distance">
+                        <h3>Дистанция</h3>
+                        <p>1 000 м</p>
+                        <p>3 000 м</p>
+                        <p>5 000 м</p>
+                        <p>10 000 м</p>
+                    </div>
+
+                    <div class="details">
+                        <h3>Подробно</h3>
+                        <p><a class="details__link" href="#">Сайт гонки</a></p>
+                        <p><a class="details__link" href="#">Регистрация</a></p>    
+                    </div>
+
+                </div>
+
+               <div class="element">
+                    <div class="image__element">
+                        <img src="img/img.jpg" alt="photo">
+                    </div>
+
+                    <div class="element__discription">
+                        <div class="discription__title">
+                            <h2>Oceanman lago D´orta 2021</h2>
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <p class="discription__text">Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>
+                        <div class="hide discription__text animation" id="text4">
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p> 
+                            <p>Ocenman - международная серия заплывов на открытой воде, которая традиционно, привлекает тысячи пловецов самого разного уровня для участия в соревнованиях.</p>    
+                        </div>
+                        <div class="discription__footer">
+                            <div class="country">
+                                <div>
+                                    <img src="img/flag.png" alt="flag">
+                                </div>
+                                <p>Греция</p>
+                            </div>
+                            <div class="date">
+                                <img src="img/calendar.png" alt="calendar">
+                                <p>18.06.2021 - 20.06.2021</p>
+                            </div>
+                            <a id="link4" class="country__link" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="distance">
+                        <h3>Дистанция</h3>
+                        <p>1 000 м</p>
+                        <p>3 000 м</p>
+                        <p>5 000 м</p>
+                        <p>10 000 м</p>
+                    </div>
+
+                    <div class="details">
+                        <h3>Подробно</h3>
+                        <p><a class="details__link" href="#">Сайт гонки</a></p>
+                        <p><a class="details__link" href="#">Регистрация</a></p>
+                    </div>
+               </div>
+           </div>
+
+           <div class="squares">
+               <div class="square"> <a href="#">1</a></div>
+               <div class="square"><a href="#">2</a></div>
+               <div class="square"><a href="#">3</a></div>
+           </div>
+       </main>
+       <footer>
+           <div class="footer wrap">
+               <h2>OpenWater</h2>
+           </div>
+       </footer>
+   </div>
+   <script src="js/script.js"></script>
+   <script src="js/text.js"></script>
+   <script src="js/date.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+footer {
+    margin: 25px 0 80px;
+    background: url(../../img/wave.png) top repeat-x;
+    padding: 2px 0 0 0;
+        
+    .footer {
+        margin-top: 20px;
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            color: #c1bcbc;
+        }
+
+    }
+}
+
+@media (max-width: 440px){
+    footer {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,22 @@
+.header {
+        background: url(../../img/wave.png) bottom repeat-x;
+        padding: 0 0 15px 0;
+        }
+    
+    .header__title {
+        padding-top: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: #ffffff;
+        
+    }
+
+
+@media (max-width: 665px) {
+    .header {
+        .header__title {
+            font-size: 32px;
+        }
+    }
+}
